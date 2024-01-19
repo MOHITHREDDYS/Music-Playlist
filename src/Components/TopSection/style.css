@@ -1,0 +1,22 @@
+.top-section-container {
+  height: 40vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 50px;
+  font-family: 'Roboto';
+}
+
+.singer-name {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.profession {
+  color: #cbd5e1;
+  font-size: 25px;
+  margin-top: 10px;
+}

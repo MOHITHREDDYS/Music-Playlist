@@ -1,0 +1,45 @@
+.bottom-section-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.name-and-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.playlist-heading {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.input-search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 6px;
+  min-width: 200px;
+  width: 30%;
+}
+
+input {
+  color: #cbd5e1;
+  font-size: 15px;
+  font-family: 'Roboto';
+  background-color: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.search-icon {
+  color: #ffffff;
+  font-size: 20px;
+}

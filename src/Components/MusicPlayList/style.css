@@ -1,0 +1,6 @@
+.main-container {
+  height: 100vh;
+  background-color: #152850;
+  max-width: 1200px;
+  min-width: 300px;
+}
