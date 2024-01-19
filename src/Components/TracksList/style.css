@@ -26,6 +26,7 @@ li {
   font-size: 20px;
   color: #ffffff;
   font-family: 'Roboto';
+  font-weight: bold;
 }
 
 .track-genre {
@@ -50,5 +51,11 @@ li {
 .delete-icon {
   font-size: 20px;
   color: #ffffff;
+}
+button {
+  border: none;
+  outline: none;
   cursor: pointer;
+  padding: 0px;
+  background-color: transparent;
 }

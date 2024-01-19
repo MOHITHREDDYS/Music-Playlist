@@ -26,16 +26,24 @@ const TracksList = () => (
                 <div className="track-image-name-container">
                   <img src={imageUrl} alt="track" className="track-image" />
                   <div>
-                    <h1 className="track-name">{name}</h1>
+                    <p className="track-name">{name}</p>
                     <p className="track-genre">{genre}</p>
                   </div>
                 </div>
                 <div className="duration-and-delete-container">
                   <p className="track-duration">{duration}</p>
-                  <AiOutlineDelete
-                    className="delete-icon"
+                  <button
+                    type="button"
                     onClick={onClickingDeleteIcon}
-                  />
+                    data-testid="delete"
+                  >
+                    <AiOutlineDelete
+                      aria-label="delete playlist"
+                      className="delete-icon"
+                      size={20}
+                      color="#ffffff"
+                    />
+                  </button>
                 </div>
               </li>
             )

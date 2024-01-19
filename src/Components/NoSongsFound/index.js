@@ -2,7 +2,7 @@ import './style.css'
 
 const NoSongsFound = () => (
   <div className="no-songs-container">
-    <h1 className="no-songs-heading">No Songs Found</h1>
+    <p className="no-songs-heading">No Songs Found</p>
   </div>
 )
 
