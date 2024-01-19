@@ -1,6 +1,7 @@
 import {FiSearch} from 'react-icons/fi'
 
 import TracksList from '../TracksList'
+import NoSongsFound from '../NoSongsFound'
 
 import './style.css'
 import PlayListContext from '../../Context/PlayListContext'
@@ -8,10 +9,14 @@ import PlayListContext from '../../Context/PlayListContext'
 const BottomSection = () => (
   <PlayListContext.Consumer>
     {value => {
-      const {searchInput, updateSearchInput} = value
+      const {searchInput, updateSearchInput, tracksList} = value
       const onChangingInput = event => {
         updateSearchInput(event.target.value)
       }
+
+      const filteredTrackList = tracksList.filter(eachTrack =>
+        eachTrack.name.toLowerCase().includes(searchInput.toLowerCase()),
+      )
 
       return (
         <div className="bottom-section-container">
@@ -27,7 +32,8 @@ const BottomSection = () => (
               <FiSearch className="search-icon" />
             </div>
           </div>
-          <TracksList />
+          {filteredTrackList.length > 0 && <TracksList />}
+          {filteredTrackList.length === 0 && <NoSongsFound />}
         </div>
       )
     }}

@@ -20,6 +20,7 @@ const TracksList = () => (
             const onClickingDeleteIcon = () => {
               updateTracksList(id)
             }
+
             return (
               <li key={id}>
                 <div className="track-image-name-container">

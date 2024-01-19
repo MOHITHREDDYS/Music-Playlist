@@ -1,0 +1,13 @@
+.no-songs-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-songs-heading {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Roboto';
+  text-align: center;
+}

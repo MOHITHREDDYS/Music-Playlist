@@ -107,7 +107,9 @@ const App = () => {
         updateSearchInput,
       }}
     >
-      <MusicPlayList initialTracksList={initialTracksList} />
+      <div className="app-container">
+        <MusicPlayList initialTracksList={initialTracksList} />
+      </div>
     </PlayListContext.Provider>
   )
 }
